@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="pcss/flipcooin.css">
+</head>
+<body>
+  <div class="box2">
+    <p class="js-moves">
+      <h3><b>You VS Computer</b></h3>
+    </p>
+  </div>
+  <div class="box">
+    <h1>Flip a Coin</h1>
+    <p>Guess the outcome of a coin flip. <b>Click</b> <br>
+      "Heads" or "Tails".</p>
+
+    <button onclick="playGame('Heads')" class="move-button">
+      <img src="images/heads.png" alt="" class="move-icon1">
+      Heads
+    </button>
+
+    <button onclick="playGame('Tails')" class="move-button">
+      <img src="images/tails.png" alt="" class="move-icon2">
+      Tails
+    </button>
+    <p class="js-result"></p>
+    <p class="js-score"></p>
+
+    <button onclick="
+      score.wins = 0
+      score.losses = 0
+      localStorage.removeItem('score')
+      resetGame()
+    " class="reset-score"
+    >Reset Score</button>
+  </div>
+
+
+
+  <script src="pjavascript/flipcoin.js">
+    /*if (coin <= 0.5 || coin > 1) {
+      let result = console.log(alert('Heads!'));
+    } else if (coin > 0.5 || coin <= 1) {
+      result = console.log(alert('Tails!'));
+    }else {
+      result = console.log(alert('Invalid input!'));
+    }
+    if (guess === result) {
+      console.log(alert('You guessed right!'));
+    } else {
+      console.log(alert('You guessed wrong!'));
+    }*/
+  </script>
+
+</body>
+</html>

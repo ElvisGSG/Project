@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>booleans</title>
+    <link rel="stylesheet" href="pcss/rockpaperscissors1.css">
+  </head>
+  <body>
+    <div class="rps">
+      <p class="title">Rock Paper Sissors</p>
+      <button onclick="
+        playgame('rock')
+        "class = "move-button"
+        ><img src="images/rock-emoji.png" alt="rock" class="move-icon">
+        </button>
+      
+      <button onclick=" 
+        playgame('paper')
+        "class = "move-button"
+        >
+        <img src="images/paper-emoji.png" alt="paper" class="move-icon">
+        </button>
+
+      <button onclick="
+        playgame('scissors')
+        "class = "move-button"
+        >
+        <img src="images/scissors-emoji.png" alt="scissors" class="move-icon">
+        </button> 
+
+      <p class="js-result result"></p>
+      <p class="js-moves"></p>
+      <p class="js-score score"></p>
+
+      <button onclick="
+      score.win = 0
+      score.lose = 0
+      score.draw = 0
+      localStorage.removeItem('score');
+      udateScoreElement();
+      " class="reset-score">Reset score</button>
+    </div>
+      <script src="pjavascript/javascript5.js">
+
+
+        
+        let condition = !0 ? 'true' : 'false';
+        console.log(condition); // true
+        
+
+          
+      </script>
+  </body>
+</html>
